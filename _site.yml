@@ -12,8 +12,6 @@ output:
     highlight: pygments
     lib_dir: site_libs
     self_contained: no
-    include:
-      after_body: footer.html
     css: styles.css
 output_dir: "."
 
