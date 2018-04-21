@@ -43,12 +43,12 @@ knitr::include_graphics("flir.png")
 
 ### Reflectance maps 
 
-![*Green, Red, Red Edge and NIR reflectance maps (scale is based on percentiles)*](monochrome.png){width="74%"} 
+![*Green, Red, Red Edge and NIR reflectance maps (scale is based on percentiles)*](monoc.png){width="74%"} 
 
-![*Band ratio and band index reflectance maps (scale is based on percentiles)*](ratio_index.png){width="70%"}
+![*Band ratio and band index reflectance maps (scale is based on percentiles)*](ratindx.png){width="70%"}
 
 
-![*Turbidity maps calculated with the single band turbidity equation (scale is based on min-max of 10 sample points)*](fnu_single.png){width="70%"}
+![*Turbidity maps calculated with the single band turbidity equation (scale is based on min-max of 10 sample points)*](fnu.png){width="70%"}
 
 ### Data analysis
 
