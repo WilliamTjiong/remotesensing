@@ -1,7 +1,7 @@
 ---
-title: "Bachelor's thesis"
-author: "William Tjiong"
-date: "3 april 2018"
+title: "Remote sensing of regional waterways "
+author: "A study to investigate the  possibilities of commercially available optical remote sensing instruments to measure and monitor the waterquality of regional waterways in the province of Limburg, The Netherlands."
+date: "7 June 2018"
 output: html_document
 ---
 

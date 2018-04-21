@@ -1,5 +1,10 @@
 ---
-title: "About This Website"
+title: "About this webpage"
 ---
 
-More about this website.
+This webpage was created by William Tjiong and Bart Tromp. The purpose of this webpage is to display the results of their thesis research regarding optical remote sensing of regional waterways. This thesis was submitted in partial fullfilment of the requirements for the degree of Bachelor in Land- and Water Management at the University of Applied Sciences Van Hall Larenstein, Velp. The thesis was commisioned by the Waterboard Limburg.
+
+More about the authors: 
+
+
+
