@@ -248,6 +248,390 @@ $(document).ready(function () {
 <p><img src="index_files/figure-html/pressure-1.png" width="672" /></p>
 <p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 </div>
+<div id="remote-sensing-instruments-used-in-this-study" class="section level2">
+<h2>Remote sensing instruments used in this study</h2>
+<p><img src="drone_multisensor.png" width="50%" /><img src="flir.png" width="50%" /></p>
+</div>
+<div id="pilot-study-a-deriving-turbidity-of-waterways-from-uav-based-multispectral-camera" class="section level2">
+<h2>Pilot study A Deriving turbidity of waterways from UAV-based multispectral camera</h2>
+<div id="methodology" class="section level3">
+<h3>Methodology</h3>
+<p><strong>1. Data acquisition</strong></p>
+<ul>
+<li>Acquiring multispectral images (Green, Red, Red Edge,NIR) by drone</li>
+<li>Turbidity and suspended solids water samples from 10 validation points</li>
+</ul>
+<p><strong>2. Data processing</strong></p>
+<ul>
+<li>Creating reflectance maps from the bands in Pix4D Mapper photogrammertry software</li>
+<li>Georeferencing the reflectance maps to improve projection accuracy</li>
+<li>Calculate band ratio and band index maps from the reflectance maps</li>
+<li>Calculate turbidity map using a single band multisensor equation (<a href="https://www.researchgate.net/publication/252685483_Calibration_and_validation_of_a_generic_multisensor_algorithm_for_mapping_of_turbidity_in_coastal_waters">Nechad et al., 2009</a>)</li>
+<li>Extract reflectance data from band ratio, band index and single band turbidity maps</li>
+</ul>
+<p><strong>3. Data analysis</strong></p>
+<ul>
+<li>Evaluate and clean remote sensing data</li>
+<li>Investigate the relationship between reflectance remote sensing data and laboratory results of the turbidity and total suspended solids water samples by using a linear model</li>
+<li>Validate the correlation between turbidty map (derived from the single band equation) and the laboratory results of the turbidty and total suspended solids</li>
+</ul>
+</div>
+<div id="study-area" class="section level3">
+<h3>Study area</h3>
+<p><strong>Lollebeek (51°29’21.0“N, 6°03’18.4”E)</strong></p>
+<div class="figure">
+<img src="lollebeek.png" style="width:75.0%" />
+
+</div>
+</div>
+<div id="reflectance-maps" class="section level3">
+<h3>Reflectance maps</h3>
+<div class="figure">
+<img src="monochrome.png" alt="Green, Red, Red Edge and NIR reflectance maps (scale is based on percentiles)" style="width:74.0%" />
+<p class="caption"><em>Green, Red, Red Edge and NIR reflectance maps (scale is based on percentiles)</em></p>
+</div>
+<div class="figure">
+<img src="ratio_index.png" alt="Band ratio and band index reflectance maps (scale is based on percentiles)" style="width:70.0%" />
+<p class="caption"><em>Band ratio and band index reflectance maps (scale is based on percentiles)</em></p>
+</div>
+<div class="figure">
+<img src="fnu_single.png" alt="Turbidity maps calculated with the single band turbidity equation (scale is based on min-max of 10 sample points)" style="width:70.0%" />
+<p class="caption"><em>Turbidity maps calculated with the single band turbidity equation (scale is based on min-max of 10 sample points)</em></p>
+</div>
+</div>
+<div id="data-analysis" class="section level3">
+<h3>Data analysis</h3>
+<strong>Descriptive statistics</strong>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Map
+</th>
+<th style="text-align:right;">
+Min
+</th>
+<th style="text-align:right;">
+Q1
+</th>
+<th style="text-align:right;">
+Median
+</th>
+<th style="text-align:right;">
+Mean
+</th>
+<th style="text-align:right;">
+Q3
+</th>
+<th style="text-align:right;">
+Max
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Rood
+</td>
+<td style="text-align:right;">
+0.057
+</td>
+<td style="text-align:right;">
+0.058
+</td>
+<td style="text-align:right;">
+0.062
+</td>
+<td style="text-align:right;">
+0.062
+</td>
+<td style="text-align:right;">
+0.065
+</td>
+<td style="text-align:right;">
+0.078
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Red Edge
+</td>
+<td style="text-align:right;">
+0.055
+</td>
+<td style="text-align:right;">
+0.070
+</td>
+<td style="text-align:right;">
+0.074
+</td>
+<td style="text-align:right;">
+0.075
+</td>
+<td style="text-align:right;">
+0.081
+</td>
+<td style="text-align:right;">
+0.089
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NIR
+</td>
+<td style="text-align:right;">
+0.064
+</td>
+<td style="text-align:right;">
+0.081
+</td>
+<td style="text-align:right;">
+0.091
+</td>
+<td style="text-align:right;">
+0.090
+</td>
+<td style="text-align:right;">
+0.098
+</td>
+<td style="text-align:right;">
+0.107
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Groen/ NIR
+</td>
+<td style="text-align:right;">
+0.483
+</td>
+<td style="text-align:right;">
+0.537
+</td>
+<td style="text-align:right;">
+0.589
+</td>
+<td style="text-align:right;">
+0.609
+</td>
+<td style="text-align:right;">
+0.653
+</td>
+<td style="text-align:right;">
+0.863
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Rood/ NIR
+</td>
+<td style="text-align:right;">
+0.508
+</td>
+<td style="text-align:right;">
+0.639
+</td>
+<td style="text-align:right;">
+0.737
+</td>
+<td style="text-align:right;">
+0.717
+</td>
+<td style="text-align:right;">
+0.784
+</td>
+<td style="text-align:right;">
+0.945
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Red Edge/ NIR
+</td>
+<td style="text-align:right;">
+0.803
+</td>
+<td style="text-align:right;">
+0.819
+</td>
+<td style="text-align:right;">
+0.831
+</td>
+<td style="text-align:right;">
+0.838
+</td>
+<td style="text-align:right;">
+0.859
+</td>
+<td style="text-align:right;">
+0.889
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Rood/ Red Edge
+</td>
+<td style="text-align:right;">
+0.606
+</td>
+<td style="text-align:right;">
+0.795
+</td>
+<td style="text-align:right;">
+0.879
+</td>
+<td style="text-align:right;">
+0.854
+</td>
+<td style="text-align:right;">
+0.925
+</td>
+<td style="text-align:right;">
+1.091
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NDVI
+</td>
+<td style="text-align:right;">
+0.028
+</td>
+<td style="text-align:right;">
+0.126
+</td>
+<td style="text-align:right;">
+0.156
+</td>
+<td style="text-align:right;">
+0.177
+</td>
+<td style="text-align:right;">
+0.227
+</td>
+<td style="text-align:right;">
+0.342
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NDWI
+</td>
+<td style="text-align:right;">
+-0.362
+</td>
+<td style="text-align:right;">
+-0.302
+</td>
+<td style="text-align:right;">
+-0.261
+</td>
+<td style="text-align:right;">
+-0.250
+</td>
+<td style="text-align:right;">
+-0.211
+</td>
+<td style="text-align:right;">
+-0.074
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+NDRE
+</td>
+<td style="text-align:right;">
+0.059
+</td>
+<td style="text-align:right;">
+0.076
+</td>
+<td style="text-align:right;">
+0.093
+</td>
+<td style="text-align:right;">
+0.088
+</td>
+<td style="text-align:right;">
+0.099
+</td>
+<td style="text-align:right;">
+0.110
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FNU (Rood)
+</td>
+<td style="text-align:right;">
+18.220
+</td>
+<td style="text-align:right;">
+23.050
+</td>
+<td style="text-align:right;">
+25.900
+</td>
+<td style="text-align:right;">
+26.310
+</td>
+<td style="text-align:right;">
+27.670
+</td>
+<td style="text-align:right;">
+39.230
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FNU (Red Edge)
+</td>
+<td style="text-align:right;">
+79.020
+</td>
+<td style="text-align:right;">
+113.060
+</td>
+<td style="text-align:right;">
+123.020
+</td>
+<td style="text-align:right;">
+130.020
+</td>
+<td style="text-align:right;">
+146.890
+</td>
+<td style="text-align:right;">
+183.930
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FNU (NIR)
+</td>
+<td style="text-align:right;">
+113.700
+</td>
+<td style="text-align:right;">
+165.500
+</td>
+<td style="text-align:right;">
+202.800
+</td>
+<td style="text-align:right;">
+207.000
+</td>
+<td style="text-align:right;">
+237.800
+</td>
+<td style="text-align:right;">
+311.500
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
 
 
