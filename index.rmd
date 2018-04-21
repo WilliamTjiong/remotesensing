@@ -63,7 +63,6 @@ kable(summary_map, "html") %>%
 ```
 
 
-![](fnu_single.png)
-
+![](lollebeek.png){width="75%"} 
 
 
