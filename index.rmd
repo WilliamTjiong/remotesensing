@@ -4,6 +4,7 @@ author: "A study to investigate the  possibilities of commercially available opt
 #date: "Published on 7 June 2018"
 output: html_document
 ---
+***
 
 ## Remote sensing instruments used in this study
 
@@ -14,14 +15,14 @@ knitr::include_graphics("flir.png")
 
 ## Pilot study A Deriving turbidity of waterways from drone-based multispectral camera
 
-### Methodology
+###Methodology
 
-**1. Data acquisition**
+**Data acquisition**
 
   + Acquiring multispectral images (Green, Red, Red Edge,NIR) by drone
   + Turbidity and suspended solids water samples from 10 validation points 
 
-**2. Data processing**
+**Data processing**
 
   + Creating reflectance maps from the bands in Pix4D Mapper photogrammertry software
   + Georeferencing the reflectance maps to improve projection accuracy
@@ -29,26 +30,26 @@ knitr::include_graphics("flir.png")
   + Calculate turbidity map using a single band multisensor equation ([Nechad et al., 2009 ](https://www.researchgate.net/publication/252685483_Calibration_and_validation_of_a_generic_multisensor_algorithm_for_mapping_of_turbidity_in_coastal_waters))
   + Extract reflectance data from band ratio, band index and single band turbidity maps
 
-**3. Data analysis**
+**Data analysis**
 
   + Evaluate and clean remote sensing data
   + Investigate the relationship between reflectance remote sensing data and laboratory results of the turbidity and total suspended solids water samples by using a linear model
   + Validate the correlation between turbidty map (derived from the single band equation) and the laboratory results of the turbidty and total suspended solids
 
-### Study area  
-
-**Lollebeek (lat: 51.489167,long: 6.055111)**
+**Study area Lollebeek (lat: 51.489167,long: 6.055111)**
     
 ![](lollebeek.png){width="75%"} 
 
+
 ### Reflectance maps 
 
-![](monoc.png){width="74%"} 
+![*Reflectance maps of Green, Red, Red Edge and NIR bands (scale is based on specific percentile range )*](monoc.png){width="74%"} 
 
-![](ratindx.png){width="70%"}
+![*Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )*](ratindx.png){width="70%"}
 
 
-![](fnu.png){width="70%"}
+![*Turbidity maps calculated with the single band turbidity equation for Red, Red Edge and NIR band (scale is based on the min-max range of the 10 validation points)*](fnu.png){width="70%"}
+
 
 ### Data analysis
 
