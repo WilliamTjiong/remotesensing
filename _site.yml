@@ -2,7 +2,7 @@ name: thesis-webpage
 navbar:
   title: Thesis webpage
   left:
-  - text: Home
+  - text: Pilot studies
     href: index.html
   - text: About
     href: about.html
