@@ -1,6 +1,6 @@
 ---
-title: "Pilot study A Deriving water quality parameters of a waterway from drone-based multispectral camera"
-subtitle: "Investigating the possibility of a Parrot Sequoia multispectral camera to estimate turbidity and total suspended solids in water"
+title: "Pilot study B thermal sensing"
+subtitle: "Investigating to what extent the FLIR One Pro thermal camera is able to measure temperature of a water body"
 output: html_document
 ---
 
@@ -8,6 +8,7 @@ output: html_document
 knitr::include_graphics("flir.png") 
 ```
 *FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone.* 
+
 ***
 
 ###Approach

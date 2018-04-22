@@ -8,6 +8,7 @@ output: html_document
 knitr::include_graphics("drone.png") 
 ```
 *Parrot Sequoia multispectral camera mounted under a drone.*
+
 ***
 
 ###Approach
@@ -35,6 +36,7 @@ knitr::include_graphics("drone.png")
 ![Turbidity maps calculated with the single band turbidity equation for Red, Red Edge and NIR band (scale is based on the min-max range of the 10 validation points)](fnu.png){width="70%"}
 
 ***
+
 ### Data analysis
 
 **Descriptive statistics**
