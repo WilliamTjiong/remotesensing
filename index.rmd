@@ -4,7 +4,7 @@ subtitle: "A study to investigate the  possibilities of commercially available o
 author:
   - By William Tjiong and Bart Tromp
 date: "7 June 2018"
-tags: remote sensing, drone, thermal camera, multispectral camera, water quality
+tags: "#remote sensing, #drone, #thermal camera, #multispectral camera, #water quality"
 output: html_document
 ---
 ***
