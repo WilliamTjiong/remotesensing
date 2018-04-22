@@ -12,7 +12,7 @@ knitr::include_graphics("drone.png")
 knitr::include_graphics("flir.png") 
 ```
 
-## Pilot study A Deriving turbidity of waterways from UAV-based multispectral camera
+## Pilot study A Deriving turbidity of waterways from drone-based multispectral camera
 
 ### Methodology
 
@@ -37,18 +37,18 @@ knitr::include_graphics("flir.png")
 
 ### Study area  
 
-**Lollebeek (51°29'21.0"N, 6°03'18.4"E)**
+**Lollebeek (lat: 51.489167,long: 6.055111)**
     
 ![](lollebeek.png){width="75%"} 
 
 ### Reflectance maps 
 
-![*Green, Red, Red Edge and NIR reflectance maps (scale is based on percentiles)*](monoc.png){width="74%"} 
+![](monoc.png){width="74%"} 
 
-![*Band ratio and band index reflectance maps (scale is based on percentiles)*](ratindx.png){width="70%"}
+![](ratindx.png){width="70%"}
 
 
-![*Turbidity maps calculated with the single band turbidity equation (scale is based on min-max of 10 sample points)*](fnu.png){width="70%"}
+![](fnu.png){width="70%"}
 
 ### Data analysis
 
