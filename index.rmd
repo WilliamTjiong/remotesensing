@@ -9,7 +9,7 @@ output: html_document
 ## Remote sensing instruments used in this study
 
 ```{r, out.width = "50%", echo=FALSE}
-knitr::include_graphics("drone.png") 
+knitr::include_graphics("drone.png")[wtf bro] 
 knitr::include_graphics("flir.png") 
 ```
 
