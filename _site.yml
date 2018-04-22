@@ -2,10 +2,12 @@ name: thesis-webpage
 navbar:
   title: Thesis webpage
   left:
-  - text: Pilot studies
-    href: index.html
-  - text: About
+  - text: Home
     href: about.html
+  - text: Pilot study A
+    href: index.html
+  - text: Pilot study B
+    href: indexb.html
 output:
   html_document:
     theme: cerulean

@@ -1,0 +1,12 @@
+---
+title: "Pilot study A Deriving water quality parameters of a waterway from drone-based multispectral camera"
+subtitle: "Investigating the possibility of a Parrot Sequoia multispectral camera to estimate turbidity and total suspended solids in water"
+output: html_document
+---
+
+## Remote sensing instrument used in this pilot study
+
+```{r, out.width = "100%", echo=FALSE}
+knitr::include_graphics("drone.png") 
+```
+ 

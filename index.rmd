@@ -14,15 +14,21 @@ output: html_document
 knitr::include_graphics("drone.png")
 knitr::include_graphics("flir.png") 
 ```
-
+ 
 *Parrot Sequoia multispectral camera mounted under a drone (left) and a FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone (right)*
-
-
+ 
+ 
 ## Pilot study A Deriving turbidity of a waterway from drone-based multispectral camera
-
+ 
 ###Approach
 
+
 ![](flowchart.png){width="100%"} 
+
+*Taken from 10 sample locations 
+
+**Calculated using a single band turbidity algorithm by Nechad et al. [(2009)](https://www.researchgate.net/publication/266852538_A_single_algorithm_to_retrieve_turbidity_from_remotely-sensed_data_in_all_coastal_and_estuarine_waters)
+
 
 **Study area Lollebeek (lat: 51.489167,long: 6.055111)**
     
@@ -31,12 +37,12 @@ knitr::include_graphics("flir.png")
 
 ### Reflectance maps 
 
-![*Reflectance maps of Green, Red, Red Edge and NIR bands (scale is based on specific percentile range )*](monoc.png){width="74%"} 
+![Reflectance maps of Green, Red, Red Edge and NIR bands (scale is based on specific percentile range )](monoc.png){width="74%"} 
 
-![*Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )*](ratindx.png){width="70%"}
+![Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )](ratindx.png){width="70%"}
 
 
-![*Turbidity maps calculated with the single band turbidity equation for Red, Red Edge and NIR band (scale is based on the min-max range of the 10 validation points)*](fnu.png){width="70%"}
+![Turbidity maps calculated with the single band turbidity equation for Red, Red Edge and NIR band (scale is based on the min-max range of the 10 validation points)](fnu.png){width="70%"}
 
 
 ### Data analysis
@@ -56,3 +62,4 @@ kable(summary_map, "html") %>%
 
 
 
+***

@@ -1,6 +1,10 @@
 ---
-title: "About this webpage"
+title: "Remote sensing of regional waterways "
+subtitle: "A study to investigate the  possibilities of commercially available optical remote sensing instruments to measure and monitor water quality of regional waterways in the province of Limburg, The Netherlands."
+author:
+  - By William Tjiong and Bart Tromp
 date: "7 June 2018"
+output: html_document
 ---
 
 This webpage was created by William Tjiong and Bart Tromp. The purpose of this webpage is to display the results of their thesis research regarding optical remote sensing of regional waterways. The research was conducted from 1^st^ February till 7^th^ June 2018. 
