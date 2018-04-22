@@ -3,7 +3,7 @@ navbar:
   title: Thesis webpage
   left:
   - text: Home
-    href: about.html
+    href: index.html
   - text: Pilot study A
     href: studya.html
   - text: Pilot study B
