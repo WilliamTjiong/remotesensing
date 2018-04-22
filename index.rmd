@@ -9,9 +9,11 @@ output: html_document
 ## Remote sensing instruments used in this study
 
 ```{r, out.width = "50%", echo=FALSE}
-knitr::include_graphics("drone.png")[wtf bro] 
+knitr::include_graphics("drone.png")
 knitr::include_graphics("flir.png") 
 ```
+
+*Parrot Sequoia multispectral camera mounter under a drone (left) and a FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone (right)*
 
 ## Pilot study A Deriving turbidity of waterways from drone-based multispectral camera
 
