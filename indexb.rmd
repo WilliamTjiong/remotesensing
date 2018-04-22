@@ -4,9 +4,23 @@ subtitle: "Investigating the possibility of a Parrot Sequoia multispectral camer
 output: html_document
 ---
 
-## Remote sensing instrument used in this pilot study
-
 ```{r, out.width = "100%", echo=FALSE}
-knitr::include_graphics("drone.png") 
+knitr::include_graphics("flir.png") 
 ```
- 
+*FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone.* 
+***
+
+###Approach
+**Set-up laboratory experiments**
+
+**Set-up field experiments**
+
+***
+
+###Thermal images
+
+**Laboratory experiments**
+insert thermal images here
+
+**Field experiments**
+Insert interactive map here
