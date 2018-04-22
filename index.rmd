@@ -2,8 +2,7 @@
 title: "Remote sensing of regional waterways "
 subtitle: "A study to investigate the  possibilities of commercially available optical remote sensing instruments to measure and monitor the water quality of regional waterways in the province of Limburg, The Netherlands."
 author:
-  - William Tjiong
-  - Bart Tromp
+  - By William Tjiong and Bart Tromp
 date: "7 June 2018"
 output: html_document
 ---
@@ -18,8 +17,9 @@ knitr::include_graphics("flir.png")
 
 *Parrot Sequoia multispectral camera mounted under a drone (left) and a FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone (right)*
 ***
-
-## Pilot study A Deriving turbidity of waterways from drone-based multispectral camera
+---
+---
+## Pilot study A Deriving turbidity of a waterway from drone-based multispectral camera
 
 ###Methodology
 
