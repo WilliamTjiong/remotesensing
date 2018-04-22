@@ -14,7 +14,8 @@ knitr::include_graphics("drone.png")
 ###Approach
 
 
-![](flowchart.png){width="100%"} 
+![](flowchart.png){width="80%"}
+
 
 *Taken from 10 sample locations 
 
