@@ -17,8 +17,6 @@ knitr::include_graphics("drone.png")
 
 *Taken from 10 sample locations 
 
-**Calculated using a single band turbidity algorithm by Nechad et al. [(2009)](https://www.researchgate.net/publication/266852538_A_single_algorithm_to_retrieve_turbidity_from_remotely-sensed_data_in_all_coastal_and_estuarine_waters)
-
 **Study area Lollebeek (lat: 51.489167,long: 6.055111)**
     
 ![](lollebeek.png){width="75%"} 
