@@ -26,7 +26,9 @@ knitr::include_graphics("drone.png")
 
 ![Reflectance maps of Green, Red, Red Edge and NIR bands (scale is based on specific percentile range )](monoc.png){width="74%"} 
 
-![Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )](ratindx.png){width="70%"}
+![Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )](ratindx_1.png){width="70%"}
+
+![](ratindx_2.png){width="70%"}
 
 
 ***
