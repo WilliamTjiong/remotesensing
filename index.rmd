@@ -1,6 +1,6 @@
 ---
 title: "Remote sensing of regional waterways "
-subtitle: "A study to investigate the  added value of commercially available optical remote sensing instruments to measure and monitor water quality of regional waterways in the province of Limburg, The Netherlands."
+subtitle: "A study to investigate the  added value of commercially available optical remote sensing instruments for monitoring and assessing water quality of regional waterways in the province of Limburg, The Netherlands."
 author:
   - By William Tjiong and Bart Tromp
 date: "7 June 2018"
@@ -9,7 +9,7 @@ output: html_document
 
 ***
 
-This webpage was created by William Tjiong and Bart Tromp. The purpose of this page is to display the results of their thesis' research regarding optical remote sensing of regional waterways. During this research two pilot studies were carried out from 1^st^ February to 7^th^ June 2018. Use the menu bar to navigate to the results of these studies.  
+This webpage was created by William Tjiong and Bart Tromp. The purpose of this page is to display the results of their thesis' research regarding optical remote sensing of regional waterways. During this research two pilot studies were carried out from 1^st^ February to 7^th^ June 2018. Use the menu bar to navigate to the results pages.  
 
 This thesis was submitted in partial fullfilment of the requirements for the degree of Bachelor in Land- and Water Management at the University of Applied Sciences Van Hall Larenstein in Velp. The thesis was commissioned by the Waterboard Limburg. A PDF copy of the thesis can be send on request.  
 
