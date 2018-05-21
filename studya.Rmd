@@ -28,9 +28,9 @@ Parrot Sequoia multispectral camera mounted under a drone.
 ![Reflectance maps of Green, Red, Red Edge and NIR bands (scale is based on specific percentile range )](monoc.PNG){width="74%"} 
 
 
-![](ratindx_1.PNG){width="74%"}
+![](ratindx_1.PNG){width="70%"}
 
-![](ratindx_2.PNG){width="74%"}
+![](ratindx_2.PNG){width="70%"}
 
 Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )
 
