@@ -30,7 +30,7 @@ Parrot Sequoia multispectral camera mounted under a drone.
 
 ![](ratindx_1.png){width="74%"}
 
-![Calculated band ratio and band index reflectance maps (scale is based on specific percentile range )](ratindx_2.png){width="74%"}
+![](ratindx_2.png){width="74%"}
 
 
 ***
