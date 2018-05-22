@@ -188,7 +188,7 @@ m=mapview(Troebelheid[[1]], col.regions = pal(100), na.color= "#00000000", at = 
 m@map %>%
   setView(6.055838, 51.488856, zoom = 17) %>%
   addCircleMarkers(data=lab, lng = lab$graad_L, lat = lab$graad_B, label = ~lab$Id, radius = 5, popup = paste0("TSM (mg/l) =", lab$Zwev_stof, "; Turbidity (NTU) =", lab$Troebelhei),group="Validation point")%>%
-addLayersControl(baseGroups = c("Topografische kaart", "Luchtfoto"),overlayGroups =c("Validation point","Turbidity (NTU)"),options = layersControlOptions(collapsed = FALSE))
+addLayersControl(baseGroups = c("Esri.WorldImagery", "OpenStreetMap.DE"),overlayGroups =c("Validation point","Turbidity (NTU)"),options = layersControlOptions(collapsed = FALSE))
 
 ```
 
