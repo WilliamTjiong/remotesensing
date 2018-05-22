@@ -168,28 +168,17 @@ $Turbidity (NTU) = 5.6 +13.4(\frac{Red}{NIR}) \pm 0.7$
 
 ***
 
-### Interactive turbidity map
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(leaflet)
-library(mapview)
-library(raster)
-library(RColorBrewer)
-lab <- read.csv("Labresultaten.csv", header = TRUE, sep = ";")
+### Turbidity map
 
-pal <- colorRampPalette(brewer.pal(9, "RdYlGn"))
-Troebelheid_data <- raster("troeb_05.tif")
-Troebelheid <- stack(Troebelheid_data)
+**Interactive turbidity map**
+<iframe width="100%" height="500" src="turbidity_mapview.html" frameborder="0" allowfullscreen></iframe>
+The original turbidity raster layer has been resampled from 75mm/px to 500mm/px
 
-mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap.DE"), layers.control.pos="topleft",na.color = "#00000000")
+**Turbidity map and reference map (RGB drone image)**
+![](turb_rgb.png){width="75%"}
 
-viewExtent
 
-m=mapview(Troebelheid[[1]], col.regions = pal(100), na.color= "#00000000", at = seq(14, 19, 1), legend = TRUE, layer.name='Turbidity (NTU)', maxpixels =  970632)
-m@map %>%
-  setView(6.055838, 51.488856, zoom = 17) %>%
-  addCircleMarkers(data=lab, lng = lab$graad_L, lat = lab$graad_B, label = ~lab$Id, radius = 5, popup = paste0("TSM (mg/l) =", lab$Zwev_stof, "; Turbidity (NTU) =", lab$Troebelhei),group="Validation point")%>%
-addLayersControl(baseGroups = c("Esri.WorldImagery", "OpenStreetMap.DE"),overlayGroups =c("Validation point","Turbidity (NTU)"),options = layersControlOptions(collapsed = FALSE))
 
-```
+
 
 
