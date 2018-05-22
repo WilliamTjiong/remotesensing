@@ -171,7 +171,7 @@ $Turbidity (NTU) = 5.6 +13.4(\frac{Red}{NIR}) \pm 0.7$
 ### Turbidity map
 
 **Interactive turbidity map**
-<iframe width="100%" height="500" src="turbidity_mapview.html" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="turbidity_mapview2.html" frameborder="0" allowfullscreen></iframe>
 The original turbidity raster layer has been resampled from 75mm/px to 500mm/px
 
 **Turbidity map and reference map (RGB drone image)**
