@@ -171,16 +171,25 @@ $Turbidity (NTU) = 5.6 +13.4(\frac{Red}{NIR}) \pm 0.7$
 ### Interactive turbidity map
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 library(leaflet)
+library(mapview)
+library(raster)
+library(RColorBrewer)
 lab <- read.csv("Labresultaten.csv", header = TRUE, sep = ";")
 
-m <- leaflet() %>%
-  addTiles() %>%
+pal <- colorRampPalette(brewer.pal(9, "RdYlGn"))
+Troebelheid_data <- raster("troeb_05.tif")
+Troebelheid <- stack(Troebelheid_data)
+
+mapviewOptions(basemaps = c("Esri.WorldImagery", "OpenStreetMap.DE"), layers.control.pos="topleft",na.color = "#00000000")
+
+viewExtent
+
+m=mapview(Troebelheid[[1]], col.regions = pal(100), na.color= "#00000000", at = seq(14, 19, 1), legend = TRUE, layer.name='Turbidity (NTU)', maxpixels =  970632)
+m@map %>%
   setView(6.055838, 51.488856, zoom = 17) %>%
-  addProviderTiles("OpenTopoMap", group = "Topografische kaart", options=providerTileOptions(opacity = 0.6)) %>%
-  addProviderTiles("Esri.WorldImagery", group = "Luchtfoto", options=providerTileOptions(opacity = 0.6)) %>%
-  addCircleMarkers(data=lab, lng = lab$graad_L, lat = lab$graad_B, label = ~lab$Id, radius = 5, popup = paste0("Zwevende stof (mg/l) =", lab$Zwev_stof, "; Troebelheid (NTU) =", lab$Troebelhei)) %>%
-addLayersControl(baseGroups = c("Topografische kaart", "Luchtfoto"), overlayGroups =c("NDVI","NDWI","NDRE"),options = layersControlOptions(collapsed = FALSE))
-m
+  addCircleMarkers(data=lab, lng = lab$graad_L, lat = lab$graad_B, label = ~lab$Id, radius = 5, popup = paste0("TSM (mg/l) =", lab$Zwev_stof, "; Turbidity (NTU) =", lab$Troebelhei),group="Validation point")%>%
+addLayersControl(baseGroups = c("Topografische kaart", "Luchtfoto"),overlayGroups =c("Validation point","Turbidity (NTU)"),options = layersControlOptions(collapsed = FALSE))
+
 ```
 
 
