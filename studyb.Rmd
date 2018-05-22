@@ -7,23 +7,45 @@ output: html_document
 ```{r, out.width = "100%", echo=FALSE}
 knitr::include_graphics("flir.png") 
 ```
-*FLIr One Pro thermal camera attached on a Samsung Galaxy S8 smartphone.* 
+*FLIR One Pro thermal camera attached on a Samsung Galaxy S8 smartphone.* 
 
 ***
 
-###Approach
-**Set- up laboratory experiments**
+###Field experiments
 
-**Set- up field experiments**
+**Interactive map with field experiment results**
+
+<iframe width="75%" height="500" src="thermal_leaflet.html" frameborder="0" allowfullscreen></iframe>
+
+![](montage.jpg){width="40%"} ![](montage1.jpg){width="40%"}
+
+FLIR one Pro thermal camera setup for the drone experiment
+
+**Thermal images from field experiments**
+
+![](turb_flir.png){width="75%"}
+![](turb_flir2.png){width="75%"}
+![](flir1.jpg){width="37.2%"} ![](flir2.jpg){width="37.2%"}
+
+![](flir2.jpg){width="37.2%"} ![](flir3.jpg){width="37.2%"}
+
+Solar reflectance can be observed on some of the thermal images above.
 
 ***
 
-###Thermal images
+###Laboratory experiments
 
-**Laboratory experiments**
+**Setup**
 
-insert thermal images here
+![Experiment 1: Cold clear water and cold turbid water](materials.png){width="75%"}
 
-**Field experiments**
+![Experiment 2: Hot water and emmissivity of materials](strips.png){width="75%"}
 
-Insert interactive map here
+![Experiment 3: Confluence of hot and cold water](streamtable.png){width="75%"}
+
+**Thermal images from laboratory experiments**
+
+![](flir_res1.jpg){width="75%"}
+![](flir_res2.PNG){width="75%"}
+
+Observed temperature differences from the thermal images
