@@ -1,5 +1,5 @@
 ---
-title: "Pilot study A: Application of the Parrot Sequoia multispectral camera for assessment of surface water quality"
+title: "Pilot study A: Application of the Parrot Sequoia multispectral camera for  surface water quality assesment"
 subtitle: "Deriving turbidity and suspended matter from surface water"
 output: html_document
 ---
