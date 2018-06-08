@@ -1,6 +1,5 @@
 name: thesis-webpage
 navbar:
-  title: Thesis webpage
   left:
   - text: Home
     href: index.html

@@ -1,6 +1,6 @@
 ---
-title: "Pilot study B: Application of FLIR One Pro thermal camera for assesment of surface water quality"
-subtitle: "Investigating to what extent the FLIR One Pro thermal camera is able to measure differences in surface water temperature"
+title: "Pilot study B: Application of FLIR One Pro thermal camera for  surface water quality assesment"
+subtitle: "Thermography of (surface) water temperature"
 output: html_document
 ---
 
