@@ -181,7 +181,7 @@ Applying the turbidity equation to the Red/ NIR ratio reflectance map resulted i
 
 <iframe width="100%" height="650px" src="turbidity.html" frameborder="0" allowfullscreen></iframe>
 
-
+[Click here for a full screen preview ](https://williamtjiong.github.io/remotesensing/turbidity.html)
 
 
 

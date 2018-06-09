@@ -17,6 +17,9 @@ knitr::include_graphics("flir.png")
 
 <iframe width="75%" height="500" src="thermal_leaflet.html" frameborder="0" allowfullscreen></iframe>
 
+[Click here for a full screen preview ](https://williamtjiong.github.io/remotesensing/thermal_leaflet.html)
+
+
 ![](montage.jpg){width="40%"} ![](montage1.jpg){width="40%"}
 
 FLIR one Pro thermal camera setup for the drone experiment
